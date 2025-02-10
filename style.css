@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2874f0;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    width: 40%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    background: #ff9f00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login button {
+    background: white;
+    color: #171a20;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.cart {
+    font-size: 18px;
+}
+
+
+nav {
+    background: #0b0909;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(31, 115, 226);
+    font-size: 16px;
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+footer {
+    background: #221d1d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+

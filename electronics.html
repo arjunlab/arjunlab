@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:rgb(69, 69, 233);
+            padding: 15px 50px;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar nav ul li {
+            display: inline;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .search-cart {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-cart input {
+            padding: 7px 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .cart, .login {
+            background-color: yellowgreen;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cart:hover, .login:hover {
+            background-color: #c70039;
+        }
+
+        .arjun {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            background-color:gainsboro;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .arj {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .arj:hover {
+            transform: scale(1.05);
+            background-color: #ff6f00;
+            color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .arj img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .arj:hover img {
+            transform: scale(1.1);
+        }
+
+        .arj h2 {
+            margin: 10px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .arj button {
+            background-color:black;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .arj button:hover {
+            background-color: #c70039;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">ELECTRONICS</div>
+        
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+            <button class="cart">🛒 Cart</button>
+           
+        </div>
+    </header>
+
+    <section class="arjun">
+        <div class="arj"><img src="dell.jpg" alt="laptop"><h2>dell</h2><button>Rs: 59,999</button></div>
+        <div class="arj"><img src="hp.jpg" alt="laptop"><h2>hp</h2><button>Rs: 49,999</button></div>
+        <div class="arj"><img src="lenova.jpg" alt="laptop"><h2>lenova</h2><button>Rs:73,999</button></div>
+        <div class="arj"><img src="acer.jpg" alt="laptop"><h2>acer</h2><button>Rs:80,999</button></div>
+        <div class="arj"><img src="redmi.webp" alt="mobile"><h2>redmi note 13pro+</h2><button>Rs: 29,999</button></div>
+        <div class="arj"><img src="oppo.jpg" alt="mobile"><h2>oppo</h2><button>Rs: 18,999</button></div>
+        <div class="arj"><img src="apple.jpg" alt="mobile"><h2>apple</h2><button>Rs:89,999</button></div>
+        <div class="arj"><img src="tv.jpg" alt="tv"><h2>panasonic tv</h2><button>Rs: 50,999</button></div>
+        <div class="arj"><img src="oven.jpg" alt="oven"><h2>oven</h2><button>Rs: 6,000</button></div>
+        <div class="arj"><img src="trimmer.jpg" alt="trimmer"><h2>trimmer</h2><button>Rs: 1,800</button></div>
+        <div class="arj"><img src="pad.avif" alt="ipad"><h2>lenova ipad</h2><button>Rs: 35,000</button></div>
+        <div class="arj"><img src="key.webp" alt="key&mou"><h2>keyboard&mouse</h2><button>Rs: 1500</button></div>
+        <div class="arj"><img src="ssd.webp" alt="SSD"><h2>ssd card</h2><button>Rs: 900</button></div>
+        
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 MAKE YOUR CHOICE. created by arjun.</p>
+    </footer>
+</body>
+</html>
